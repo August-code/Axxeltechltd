@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 1px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 5px;
+    background-color: antiquewhite;
+    color: rgb(110, 4, 4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #ECA5A5;
+    color: rgb(110, 4, 4);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    box-shadow: 14px 14px 20px #ECA5A5,-14px -14px 20px antiquewhite;
+}
+
+.logo h1 {
+    font-size: 140px;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px rgb(110, 4, 4),-7px -7px #ECA5A5;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo p {
+    font-size: 45px;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: rgb(110, 4, 4);
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.navlinks a:hover {
+    color: antiquewhite;
+}
+
+#hero-background {
+    display: flex;
+    flex-direction: row;
+}
+
+#About {
+    padding: 200px 30px;
+    margin: 15px 5px;
+    border:2px solid rgb(110, 4, 4);
+    color: rgb(110, 4, 4);
+    text-align: center;
+    justify-content: center;
+}
+
+.vision {
+    padding: 200px 30px;
+    margin: 15px 5px;
+    border:2px solid rgb(110, 4, 4);
+    color: rgb(110, 4, 4);
+    text-align: center;
+}
+
+.mission {
+    padding: 200px 30px;
+    margin: 15px 5px;
+    border:2px solid rgb(110, 4, 4);
+    color: rgb(110, 4, 4);
+    text-align: center;
+}
+
+.values {
+    margin: 15px 5px;
+}
+
+.our-services h2 {
+    text-align: center;
+}
+
+.standout {
+    text-align: center;
+    border: 1px solid #ECA5A5;
+    margin: 20px 380px;
+    height: 250px;
+    padding-top: 50px;
+    background-color:#ECA5A5;
+    color: rgb(110, 4, 4);
+}
+
+.standout h2 {
+    padding: 10px 15px;
+}
+
+#Services {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 650px);
+}
+
+.services {
+    border: 1px solid #ECA5A5;
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    background-color: rgb(110, 4, 4);
+    color: #ECA5A5;
+    border: none;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#Projects {
+    padding: 50px;
+}
+
+.footertop {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(110, 4, 4);
+    color: white;
+    padding: 70px;
+}
+
+.footerbottom {
+    color: grey;
+    padding: 5px;
+    background-color: rgb(92, 4, 4);
+    text-align: end;
+}
+
+.footerlinks a {
+    display: flex;
+    flex-direction:column;
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+.footerlinks a:hover {
+    color: gold;
+}
+
+.footerlinks p {
+    font-size: small;
+    padding-top: 150px;
+}
+
+.footerlinks h3 {
+    color: #ECA5A5;
+}
+
+.footerlinks ul {
+    color: antiquewhite;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+#contactModal {
+    background-color: antiquewhite;
+    border: 1px solid #ECA5A5;
+    width: 30%;
+    height: 15%;
+    max-height: auto;
+    margin: 160px 850px;
+}
+
+#contactModal p {
+    padding-top: 15px;
+    padding-left: 5px;
+    color: rgb(110, 4, 4);
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(110, 4, 4);
+    padding-right: 9px;
+}
+
+.closer {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(110, 4, 4);
+    padding-right: 9px;
+}
+
+@media only screen and (max-width: 1350px) {
+    #Services {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .standout {
+        margin: 10px 157px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #hero-background {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .vision {
+        display:block;
+        margin: 10px 157px;
+        background-color: rgb(110, 4, 4);
+        color: #ECA5A5;
+    }
+
+    #About {
+        margin: 10px 157px;
+        background-color: rgb(110, 4, 4);
+        color: #ECA5A5;
+    }
+
+    .mission {
+        margin: 10px 157px;
+        background-color: rgb(110, 4, 4);
+        color: #ECA5A5;
+    }
+
+    #contactModal {
+        margin: 160px 600px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .footertop {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    #contactModal {
+    margin: 160px 550px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #About {
+        margin: 10px 10px;
+    }
+
+    .mission {
+        margin: 10px 10px;
+    }
+
+    .vision {
+    padding: 200px 90px;
+        margin: 10px 10px;
+    }
+
+    .standout {
+        padding: 50px 10px;
+    }
+
+    #contactModal {
+        margin: 160px 450px;
+        }
+}
+
+@media only screen and (max-width: 750px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    header .navlinks {
+        display: flex;
+        flex-direction: row;
+        font-size: larger;
+        justify-content: center;
+    }
+
+    .logo h1 {
+        font-size: 135px;
+    }
+
+    .logo p {
+        font-size: 45px;
+    }
+
+    #contactModal {
+        margin: 290px 180px;
+        width: 65%;
+        }
+}
+
+@media only screen and (max-width: 605px) {
+    .logo h1 {
+        font-size: 100px;
+    }
+
+    .logo p {
+        font-size: 32px;
+    }
+
+    .standout {
+        margin: 10px 25px;
+        padding: 35px 0;
+    }
+
+    #contactModal {
+        margin: 260px 200px;
+        width: 55%;
+        }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo h1 {
+        font-size: 85px;
+    }
+
+    .logo p {
+        font-size: 27px;
+    }
+
+    header .navlinks {
+        font-size: large;
+    }
+
+    .footertop {
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+        padding-top: 20px;
+    }
+
+    #contactModal {
+        margin: 235px 200px;
+        width: 45%;
+        }
+}
+
+@media only screen and (max-width: 430px) {
+    .logo h1 {
+        font-size: 65px;
+    }
+
+    .logo p {
+        font-size: 22px;
+    }
+
+    header .navlinks {
+        font-size: small;
+    }
+
+    #contactModal {
+        margin: 200px 110px;
+        width: 55%;
+        }
+}
+
+@media only screen and (max-width: 325px) {
+    .logo h1 {
+        font-size: 55px;
+    }
+
+    .logo p {
+        font-size: 27px;
+    }
+
+    header .navlinks {
+        font-size: 12px;
+    }
+
+    #contactModal {
+        margin: 220px 80px;
+        width: 65%;
+        }
+}
